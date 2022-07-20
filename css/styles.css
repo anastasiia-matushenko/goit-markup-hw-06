@@ -505,10 +505,6 @@ body {
     gap: 12px;
 }
 
-.subscribe-label {
-    position: relative;
-}
-
 .subscribe-fild {
     width: 358px;
     height: 50px;
@@ -522,22 +518,10 @@ body {
     outline: transparent;
 }
 
-.subscribe-name {
-    position: absolute;
-    top: 50%;
-    left: 16px;
-    transform: translateY(-50%);
-    transition: transform var(--animation);
-
+.subscribe-fild::placeholder {
     font-size: 16px;
     line-height: 1.25;
     color: rgba(255, 255, 255, 0.6);
-}
-
-
-.subscribe-fild:focus + .subscribe-name,
-.subscribe-fild:not(:placeholder-shown) + .subscribe-name {
-    transform: translateY(-45px) translateX(-16px);
 }
 
 .subscribe-btn {
